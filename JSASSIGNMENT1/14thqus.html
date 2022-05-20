@@ -1,0 +1,38 @@
+<html>
+ <head>
+	  <title>JS_Assignment15</title>
+ </head>
+
+ <body>
+     <h2>Bubble Sort using Array</h2>
+	 <script>
+	 		
+		 var ar = [5, 15, 1, 8, 10, 6, 12, 3, 2, 17];
+		 
+		 document.write("Array is : " + ar + "<br>");
+		 
+		 bubbleSort(ar);
+		 
+		 document.write("Array Sort using bubble sort is : " + ar+"<br>");
+		 
+		 function bubbleSort(ar){
+     
+		   for(var i = 0; i < ar.length; i++)
+                            {
+		       for(var j = 0; j < ( ar.length - i -1 ); j++)
+                               {
+ 
+				if(ar[j] > ar[j+1])
+                                              {
+					 var sa = ar[j]
+					  ar[j] = ar[j + 1]
+					   ar[j+1] = sa
+				}
+			}
+		   }
+		  }
+		
+	 </script>
+	 
+ </body>
+ </html>

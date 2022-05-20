@@ -1,0 +1,46 @@
+<html>
+ <head>
+	  <title>qusno-13</title>
+ </head>
+
+ <body>
+     <h2> Sum of Array </h2>
+	 
+	 <script>
+	 
+	   	 var arr = [1,2,3,4,5];
+		
+		 var sum=0, sum1=0, sum2=0;
+		 
+		 var l = arr.length;
+		 
+		 for(var i=0; i<l ; i++)
+		 {
+		  sum += arr[i] ;
+		 }
+		 
+		 var i = 0;
+		 
+		 while(i < l)
+		 {
+		   sum1 += arr[i];  
+		   i++;
+		 }
+		 
+		 var i =0;
+		 do{
+		    sum2 += arr[i];
+			i++;
+		 
+		 }while(i<l);
+		 
+		 document.write("The Sum Of Array using for loop is =" + sum + "<br>"); 
+		 document.write("The Sum Of Array using while loop is =" + sum1 +"<br>"); 
+		 document.write("The Sum Of Array using do while loop is =" + sum2); 
+		 
+		 
+	 </script>
+	
+	 
+ </body>
+ </html>
